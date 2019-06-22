@@ -1,0 +1,40 @@
+.header{
+    margin: 81px;
+    padding: 35px;
+    border: solid;
+}
+
+
+#h1{
+    margin: 50px;
+    padding: 20px;
+    border: solid;
+    margin-left: 365px;
+    width: 24%;
+}
+
+.gtn{
+    width: 30%;
+    background-color: brown;
+    height: 350px;
+    margin: 10px;
+    margin-left: 50px;
+}
+.playerscore{
+    width: 30%;
+    background-color: silver;
+    height: 350px;
+    /* margin: -28px; */
+    margin-left: 475px;
+    /* margin-bottom: 419px; */
+    margin-top: -396px;
+}
+.winsloss{
+    width: 30%;
+    background-color: gold;
+    height: 350px;
+    /* margin: -28px; */
+    margin-left: 892px;
+    /* margin-bottom: 419px; */
+    margin-top: -386px;
+}
