@@ -1,8 +1,19 @@
+#body{
+    background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/color-block-art-painting.jpg)
+}
 .header{
     margin: 81px;
     padding: 35px;
     border: solid;
+    border-color: white
 }
+
+#words{
+    color: white;
+    border: double;
+    padding: 20px;
+}
+
 
 
 #h1{
@@ -11,17 +22,18 @@
     border: solid;
     margin-left: 365px;
     width: 24%;
+    color: white;
 }
 
 .gtn{
-    width: 30%;
+    width: 26%;
     background-color: brown;
     height: 350px;
     margin: 10px;
     margin-left: 50px;
 }
 .playerscore{
-    width: 30%;
+    width: 26%;
     background-color: silver;
     height: 350px;
     /* margin: -28px; */
@@ -30,11 +42,15 @@
     margin-top: -396px;
 }
 .winsloss{
-    width: 30%;
+    width: 26%;
     background-color: gold;
     height: 350px;
     /* margin: -28px; */
     margin-left: 892px;
     /* margin-bottom: 419px; */
     margin-top: -386px;
+}
+.diamonds-img{
+    margin: 50px;
+    margin-left: 151px;
 }
