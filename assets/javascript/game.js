@@ -5,54 +5,57 @@ $(document).ready(function(){
     var loss= 0;
 
 
-    // function randomNum(min, max){
-    //     min = Math.ceil(min);
-    //     max = Math.floor(max);
-    //     return Math.floor(Math.random() * (max-min +1)) + min;
-    // }
-    for (var i = 0; i < )
+    function randomNum(max){
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max +1));
+    };
+    // for (var i = 0; i < )
 
     var targetNumber = 77;
-    $("#diamond-img").text(targetNumber);
+    $(".diamond-img").text(targetNumber);
 
-    var imageone= [1, 5, 10];
-    var imagetwo= randomNum(0, 20, 30);
-    var imagethree= randomNum(-1,-20,40);
-    var imagefour= randomNum(25, 2, 4);
+    var imageone= randomNum(1,10);
+        console.log(imageone);
+    var imagetwo= randomNum(20,30);
+        console.log(imagetwo);
+    var imagethree= randomNum(1,20);
+        console.log(imagethree);
+    var imagefour= randomNum(25, 2);
+        console.log(imagefour);
 
-    // function reset (){
-    //     counter = 0;
-    //     $("#h1").html(targetNumber);
-    //     targetNumber = randomNum(20,80);
-    //     $("#playerscore").text(counter);
-    //     imageone= randomNum(1, 5, 10);
-    //     imagetwo= randomNum(0, 20, 30);
-    //     imagethree= randomNum(-1,-20,40);
-    //     imagefour= randomNum(25, 2, 4);
-    // }
+    function reset (){
+        counter = 0;
+        $("#h1").html(targetNumber);
+        targetNumber = randomNum(20,80);
+        $(".playerscore").text(counter);
+        imageone= randomNum(1,10);
+        imagetwo= randomNum(20, 30);
+        imagethree= randomNum(20,40);
+        imagefour= randomNum(25, 2);
+    }
 
     $("#spinningd").on("click", function(){
         counter += imageone;
-        winslose();
-        $(playerscore).text(counter);
+        winsloss();
+        $(".playerscore").text(counter);
     });
     
     $("#diamond2").on("click", function(){
         counter += imagetwo;
-        winslose();
-        $(playerscore).text(counter);
+        winsloss();
+        $(".playerscore").text(counter);
     });
    
     $("#nwts").on("click", function(){
         counter += imagethree;
-        winslose();
-        $(playerscore).text(counter);
+        winsloss();
+        $(".playerscore").text(counter);
     });
 
     $("#blackdiamond").on("click", function(){
         counter += imagefour;
-        winslose();
-        $(playerscore).text(counter);
+        winsloss();
+        $(".playerscore").text(counter);
     });
      
     function winsloss (){
