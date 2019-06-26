@@ -1,10 +1,10 @@
 $(document).ready(function(){
-
+    //create varibles for the javascript file
     var counter = 0;
     var win= 0;
     var loss= 0;
     
-
+    //here is the function that will call upon random numbers for each image
     function randomNum(min,max){
 		min = Math.ceil(min);
 		max = Math.floor(max);
@@ -14,10 +14,10 @@ $(document).ready(function(){
     //     return Math.floor(Math.random() * (max +1));
     // };
     // for (var i = 0; i < )
-
+        // targetted number
     var targetNumber = 77;
     $(".diamond-img").text(targetNumber);
-
+        //image values being choosen
     var imageone= randomNum(1,10);
         console.log(imageone);
     var imagetwo= randomNum(20,3);
@@ -28,7 +28,7 @@ $(document).ready(function(){
         console.log(imagefour);
 
     
-
+        //function to allow the image to output a number
     $("#spinningd").on("click", function(){
         counter += imageone;
         winsloss();
@@ -54,7 +54,7 @@ $(document).ready(function(){
     });
      
     function winsloss (){
-
+        //this is the code to determine if you have reached the #'s choosen or if you went over
         if (counter === targetNumber){
             win++;
             alert("Gahh Damn Good Job!!!");
@@ -67,7 +67,7 @@ $(document).ready(function(){
             reset();
         }
     }
-
+    //Here is the reset function to start the game over
     function reset (){
         counter = 0;
         $(".diamond-img").html(targetNumber);
